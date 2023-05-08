@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-mvp-component-lqpo
+  namespace: mvp-dev-qszi-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:f27e5e953cb023b70eb698e0c13387951db16046776bf8976b60b9f800b9f38e
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
